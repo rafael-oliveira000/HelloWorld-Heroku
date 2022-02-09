@@ -24,7 +24,7 @@ public class HelloServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet HelloServlet</title>");            
+            out.println("<title>Servlet HelloWorld</title>");            
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet HelloServlet at " + request.getContextPath() + "</h1>");
@@ -115,7 +115,6 @@ public class HelloServlet extends HttpServlet {
 
         String nome = request.getParameter("nome");
         String tratamento = request.getParameter("tratamento");
-        String color = request.getParameter("color");
 
         msg = this.defineBodyMessage(lang, hour, nome, tratamento);
 
@@ -128,8 +127,7 @@ public class HelloServlet extends HttpServlet {
             out.println("<title>Servlet HelloServlet</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet HelloServlet</h1>");
-            out.println(String.format("<p style=\"color:%s\">%s</p>", color, msg));
+            out.println("<h1>Servlet HelloWorld!</h1>");
             out.println("</body>");
             out.println("</html>");
         }
